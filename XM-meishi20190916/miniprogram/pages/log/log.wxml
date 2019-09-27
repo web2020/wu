@@ -1,0 +1,26 @@
+<!--pages/log/log.wxml-->
+<van-tabs animated>
+  <van-tab title="登录">
+    <view class="login">
+      <view class="user_log">豆果食谱-登录</view>
+      <input bindblur="unames" placeholder='请输入您的用户名'></input>
+      <input bindblur="upwds" placeholder="请输入您的密码" type='password'></input>
+      <checkbox-group bindchange="check">
+        <checkbox>我已阅读并同意《豆果食谱用户隐私条约》</checkbox>
+      </checkbox-group>
+      <button disabled="{{o==false?false:true}}" class="btn" bindtap="user_login">登录</button>
+    </view>
+  </van-tab>
+  <van-tab title="注册">
+    <view class="login">
+      <view class="user_log">豆果食谱-注册</view>
+      <input bindblur="unames" placeholder='请输入您的用户名'></input>
+      <input bindblur="upwds" placeholder="请输入您的密码" type='password'></input>
+      <checkbox-group  bindchange="checks">
+        <checkbox>我已阅读并同意《豆果食谱用户隐私条约》</checkbox>
+      </checkbox-group>
+      <button class="btn" bindtap="user_tx">上传头像</button>
+      <button disabled="{{os==false?true:false}}" class="btn" bindtap="user_reg">注册</button>
+    </view>
+  </van-tab>
+</van-tabs>

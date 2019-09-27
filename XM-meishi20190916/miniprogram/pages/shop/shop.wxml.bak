@@ -1,0 +1,117 @@
+<!--pages/shop/shop.wxml-->
+<view class="commp">
+  <view class="sho1">
+    <image src="../../images/1.jpg"></image>
+    <image src="../../images/2.jpg"></image>
+    <image src="../../images/3.jpg"></image>
+    <image src="../../images/4.jpg"></image>
+    <image src="../../images/5.jpg"></image>
+  </view>
+  <view class="sho2">
+    <image src="../../images/6.jpg"></image>
+    <image src="../../images/7.jpg"></image>
+    <image src="../../images/8.jpg"></image>
+    <image src="../../images/9.jpg"></image>
+    <image src="../../images/10.jpg"></image>
+  </view>
+  <view class="sho3">
+    <image src="../../images/11.jpg"></image>
+    <image src="../../images/12.jpg"></image>
+    <image src="../../images/13.jpg"></image>
+    <image src="../../images/14.jpg"></image>
+    <image src="../../images/15.jpg"></image>
+  </view>
+  <view>
+    <view>
+      <image style="width:100%;height:10rem;" src="../../images/vip.png"></image>
+    </view>
+  </view>
+  <view class="mt-10">
+    <h6  style="font-weight:bold;">每日秒杀0点更新</h6>
+  </view>
+  
+  <view class="mis">
+    <view>
+      <image class="img1" src="../../images/miao1.png"></image>
+      <view class="ziti">喝一点拉十年，喝一罐拉死你</view>
+      <text style="color:red;font-size:14px;">￥12.99</text>
+    </view>
+    <view>
+      <image class="img2" src="../../images/miao2.png"></image>
+      <view class="ziti">粒粒皆辛苦，敢不吃我家米</view>
+      <text style="color:red;font-size:14px;">￥18.99</text>
+    </view>
+    <view>
+      <image class="img3" src="../../images/miao3.png"></image>
+      <view class="ziti">感情深，一口闷，农药的魅力</view>
+      <text style="color:red;font-size:14px;">￥18.99</text>
+    </view>
+  </view>
+  <view class="mt-10">
+    <text style="font-weight:bold;">近七日爆款</text>
+  </view>
+  <view class="mis">
+    <view>
+      <image class="img1" src="../../images/miao1.png"></image>
+      <view class="ziti">喝一点拉十年，喝一罐拉死你</view>
+      <text style="color:red;font-size:14px;">￥12.99</text>
+    </view>
+    <view>
+      <image class="img2" src="../../images/miao2.png"></image>
+      <view class="ziti">粒粒皆辛苦，敢不吃我家米</view>
+      <text style="color:red;font-size:14px;">￥18.99</text>
+    </view>
+    <view>
+      <image class="img3" src="../../images/miao3.png"></image>
+      <view class="ziti">感情深，一口闷，农药的魅力</view>
+      <text style="color:red;font-size:14px;">￥18.99</text>
+    </view>
+  </view>
+  <view class="mt-10 mb-10">
+    <text  style="font-weight:bold;">好物推荐</text>
+  </view>
+  <view class="hao">
+    <view class="hao1">
+      <image src="../../images/hao1.jpeg"></image>
+      <view class="a1">
+        <text class="cuti ziti">可爱三只小狗，好吃又好玩</text>
+        <text class="dk ziti-1">可爱三只小狗，好吃又好玩可爱三只小狗，好吃又好玩</text>
+      </view>
+    </view>
+    <view class="hao2 mt-10">
+      <image src="../../images/hao2.jpeg"></image>
+      <view class="a1">
+        <text class="cuti ziti">培根玉米色拉面包，咸味的更喜欢</text>
+        <text class="dk ziti-1">去皮紫薯 去皮山药 牛奶 蜂蜜 </text>
+      </view>
+    </view>
+    <view class="hao3 mt-10">
+      <image src="../../images/hao3.jpeg"></image>
+      <view class="a1">
+        <text class="cuti ziti">#秋天怎么吃# 川贝雪梨猪骨汤</text>
+        <text class="dk ziti-1">梭子蟹 蒜 姜片 小葱 黄豆酱 </text>
+      </view>
+    </view>
+    <view class="hao4 mt-10">
+      <image src="../../images/hao4.jpeg"></image>
+      <view class="a1">
+        <text class="cuti ziti">蒜子豆酱焗鱼</text>
+        <text class="dk ziti-1">梭子蟹 蒜 姜片 小葱 黄豆酱 </text>
+      </view>
+    </view>
+    <view class="hao5 mt-10">
+      <image src="../../images/hao5.jpeg"></image>
+      <view class="a1">
+        <text class="cuti ziti">香煎土豆小饼</text>
+        <text class="dk ziti-1">土豆 面粉 鸡蛋 绿尖椒圈 红椒圈 香菜叶 盐 黑胡椒粉 </text>
+      </view>
+    </view>
+    <view class="hao6 mt-10 mb-10">
+      <image src="../../images/hao6.jpg"></image>
+      <view class="a1">
+        <text class="cuti ziti">蒜子豆酱焗蟹</text>
+        <text class="dk ziti-1">梭子蟹 蒜 姜片 小葱 黄豆酱 </text>
+      </view>
+    </view>
+  </view>
+</view>

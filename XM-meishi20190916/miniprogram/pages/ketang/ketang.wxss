@@ -1,0 +1,114 @@
+/* pages/课堂/ketang.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: nowrap;
+
+  
+
+
+}
+.container image{
+width: 5rem;
+height: 5rem;
+overflow: hidden;
+
+}
+
+.vip{
+  display: block;
+  width: 732rpx;
+  height:300rpx;
+  border-radius: 2%;
+  margin-top:20rpx;
+  margin:0 auto;
+  
+}
+
+
+
+/* 图片展示区样式 */
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content .item{
+  width:375rpx;/*0.5px=1rpx*/
+  margin:0 0 10rpx 0;/*下边距为20rpx;*/
+
+}
+
+
+/* 设置图片的属性 */
+.content .item image{
+  width:100%;
+  height:450rpx;  /*换算成225px*/
+  border:1rpx solid black;
+  border-radius: 10%;
+  
+}
+
+/* 横向滚动设置父元素的属性 */
+.scroll-warp{
+  margin-bottom:20rpx;
+}
+.container-img{
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  align-items: center;
+  margin:12rpx;
+  }
+
+ .item{
+    font-size:24rpx;
+    margin-top:12rpx;
+    width:732rpx;
+    margin:0 auto;
+    background-image:url("../../images/jiantou.png") right no-repeat center  ;
+  
+  
+  }
+
+  ._img {
+    width:360rpx;
+    margin-right: 5px;
+
+  }
+
+
+    .container-img ._img image{
+    width:350rpx;
+    height:520rpx;
+    margin-left: 10rpx;
+    border-radius:12%;
+  
+  }
+
+  .container-img ._img view{  
+     font-size: 22rpx;
+     height:64rpx;
+
+
+  }
+  /* 全部课程 */
+  .KC{
+    width: 732rpx;
+    margin:0 auto;
+  }
+
+.left{
+    float: left;
+
+  }
+ 
+  .KC image{
+    width:350rpx;
+    height:520rpx;
+    border-radius:12%;
+    margin-left:10rpx; 
+  }

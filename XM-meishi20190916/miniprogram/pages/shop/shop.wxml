@@ -1,0 +1,88 @@
+<!--pages/shop/shop.wxml-->
+<view class="commp">
+  <view>
+    <view class="sho1">
+      <image src="/shang/1.jpg" bindtap="jump"></image>
+      <image src="/shang/2.jpg" bindtap="jump"></image>
+      <image src="/shang/3.jpg" bindtap="jump"></image>
+      <image src="/shang/4.jpg" bindtap="jump"></image>
+      <image src="/shang/5.jpg" bindtap="jump"></image>
+    </view>
+    <view class="sho1">
+      <image src="/shang/6.jpg" bindtap="jump"></image>
+      <image src="/shang/7.jpg" bindtap="jump"></image>
+      <image src="/shang/8.jpg" bindtap="jump"></image>
+      <image src="/shang/9.jpg" bindtap="jump"></image>
+      <image src="/shang/10.jpg" bindtap="jump"></image>
+    </view>
+    <view class="sho1">
+      <image src="/shang/11.jpg" bindtap="jump"></image>
+      <image src="/shang/12.jpg" bindtap="jump"></image>
+      <image src="/shang/13.jpg" bindtap="jump"></image>
+      <image src="/shang/14.jpg" bindtap="jump"></image>
+      <image src="/shang/15.jpg" bindtap="jump"></image>
+    </view>
+  </view>
+  <view>
+    <view>
+      <image style="width:100%;height:7rem;" src="../../images/vip.png" bindtap="vip"></image>
+    </view>
+  </view>
+  <view class="mt-10">
+    <h6 style="font-weight:bold;">每日秒杀0点更新</h6>
+  </view>
+  <view>
+    <scroll-view scroll-x class="wii mis">
+      <view class="mis">
+        <view wx:for="{{go}}" wx:key="{{index}}" wx:item="{{item}}">
+          <image class="img1" src="{{item.img}}"></image>
+          <view class="ziti">感情深，一口闷，农药的魅力</view>
+          <text style="color:red;font-size:14px;">￥18.99</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="mt-10">
+    <text style="font-weight:bold;">近七日爆款</text>
+  </view>
+  <scroll-view scroll-x>
+    <view class="mis">
+      <view wx:for="{{go1}}" wx:key="{{index}}" wx:item="{{item}}">
+        <image class="img1" src="{{item.img}}"></image>
+        <view class="ziti">喝一点喝10年十年，喝一罐20年</view>
+        <text style="color:red;font-size:14px;">￥12.99</text>
+      </view>
+
+    </view>
+  </scroll-view>
+  <view class="mt-10 mb-10">
+    <text style="font-weight:bold;">好物推荐</text>
+  </view>
+  <view bindtap="cc" class=" mt-10" wx:for="{{lists}}" wx:key="{{index}} wx:item={{item}}">
+    <view class="hao1">
+      <image class="img_item" src="{{item.img}}"></image>
+      <view class="a1">
+        <text class="cuti ziti">{{item.title}}</text>
+        <text class="dk ziti-1">{{item.n}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="mt-10">
+    <text style="font-weight:bold;">全部商品</text>
+  </view>
+  <!-- pages/fen/fen.wxml -->
+  <view class="product-app">
+    <view wx:for="{{quan}}" wx:key="{{index}}" wx:item="{{item}}" class="goods-item">
+      <image src="{{item.img}}" style="width:100%;height:200rpx;"></image>
+      <!-- (2)商品的名称 -->
+      <view class="bei">
+        <text style="font-size:12px;">{{item.guo}}</text>
+      </view>
+      <text style="font-size:14px;" class="cu">{{item.diu}}</text>
+      <!-- (3)商品的价格 -->
+      <view class="info cu">￥{{item.price}}</view>
+      <button bindtap="change1" data-id="{{item}}">购买</button>
+    </view>
+  </view>
+
+</view>

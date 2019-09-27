@@ -1,0 +1,32 @@
+/* pages/fen/fen.wxss */
+
+.product-app {
+  display: flex; 
+  flex-wrap: wrap; /*指定子元素换行*/
+  justify-content: space-between; /*两端对齐*/
+  padding: 4px; 
+}
+.goods-item {
+  width: 49%;
+  border: 1px solid #ccc; 
+  margin: 2px 0;
+  padding: 2px;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  min-height: 420rpx; 
+}
+.goods-item img {
+  width: 100%;
+}
+.goods-item .info {
+  color: red;
+  font-size: 40rpx;
+}
+.bei{
+  background:#EEEEEE;
+}
+.cu{
+  font-weight: bold;
+}
+

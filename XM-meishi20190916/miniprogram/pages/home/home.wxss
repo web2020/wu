@@ -1,0 +1,161 @@
+/* pages/exam02/home.wxss */
+/* 轮播图 */
+.u-wrp-bnr {
+  width: 93%;
+  height: 350rpx;
+  display: block;
+  background: #f0f0f0;
+  border-radius:25rpx;
+  margin:28rpx;
+}
+.u-img-slide {
+  width: 100%;
+  height: 350rpx;
+  border-radius:25rpx;
+}
+/* 轮播图样式end */
+
+#d1{
+  width:650rpx;
+  height:400rpx;
+  margin-left:50rpx;
+}
+
+
+/* 第一行按钮 */
+#d2{
+  display:flex;
+  flex-direction:row;
+  margin-top:50rpx;
+}
+
+#d2 view{
+  margin-left:50rpx;
+}
+
+#d2 image{
+  display:block;
+  width:90rpx;
+  height:90rpx;
+  
+}
+
+#d2 span{
+  font-size:19rpx;
+  margin-left:5rpx;
+  margin-top:20rpx;
+  display:block;
+  font-style:bold;
+
+}
+
+/* 第二行按钮 */
+#d3{
+  display:flex;
+  flex-direction:row;
+}
+
+#d3 view{
+  margin-left:50rpx;
+  margin-top:50rpx;
+}
+
+#d3 image{
+  display:block;
+  width:90rpx;
+  height:90rpx;
+}
+
+#d3 span{
+  margin-left:5rpx;
+  margin-top:20rpx;
+  font-size:19rpx;
+  font-style:bold;
+  display:block;
+}
+
+/* 第三行按钮 */
+#d4{
+  display:flex;
+  flex-direction:row;
+  margin-top:50rpx;
+}
+
+#d4 image{
+  display:block;
+  width:190rpx;
+  height:100rpx;
+  margin-left:45rpx;
+}
+
+/* 热门活动 */
+#d5{
+  margin-top:50rpx;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+#d5>span{
+  margin-left:50rpx;
+  font-weight:bold;
+}
+
+#d5>a{
+  margin-right:50rpx;
+  margin-top:25rpx;
+  font-size:19rpx;
+}
+
+/* 第二组轮播图 */
+#d6{
+  margin-top:25rpx;
+}
+
+/* 今日推荐 */
+#d8{
+  display:flex;
+  flex-direction:column;
+  margin-top:50rpx;
+}
+
+.con{
+  display: flex;
+  flex-direction:column;
+ align-items: center;
+
+}
+
+#d8>span{
+  margin-left:40rpx;
+  font-weight:bold;
+}
+
+/* 视频列表 */
+.contain{
+  width: 600rpx;
+  margin:0 auto;
+}
+.touxiang{
+  width: 100%;
+}
+.touxiang image{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+  float:left;
+}
+.touxiang view{
+    overflow: hidden;
+    line-height: 60rpx;
+    
+}
+.touxiang text{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  
+}

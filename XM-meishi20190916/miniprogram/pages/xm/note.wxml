@@ -1,0 +1,54 @@
+<!--pages/xm/note.wxml-->
+<!-- 轮播图 -->
+<!-- interval 轮播图切换时间 -->
+<!-- duration 轮播图切换动画持续时间 -->
+<!-- autoplay 是否自动切换 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block>
+    <swiper-item>
+      <image src="/biji/1.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/biji/2.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+<van-tabs animated>
+  <van-tab title="精选">
+    <view class="one_x">
+      <image class="x_lx" src="/biji/x_lx.png"></image>
+      <image class="x_hw" src="/biji/x_hw.png"></image>
+      <image class="x_sc" src="/biji/x_sc.png"></image>
+    </view>
+    <!--  -->
+    <view  data-tit="{{title[index]}}" data-imgs="{{imgurl[index]}}" data-tits="{{titles[index]}}" data-u_tx="{{user_tx[index]}}" bindtap="details" class="items" wx:for="{{imgurl}}" wx:key="index">
+      <image mode="widthFix" class="imgs" src="{{item}}"></image>
+      <text class="titles">{{titles[index]}}</text>
+      <view>
+        <image class="user_tx" src="{{user_tx[index]}}"></image>
+        <text class="title">{{title[index]}}</text>
+       
+      </view>
+    </view>
+    <!-- 发布按钮 -->
+    <view class="FB" bindtap="FB_container">
+      <image src="/biji/FB.png"></image>发布</view>
+  </van-tab>
+  <!-- 最新发布 -->
+  <van-tab title="最新">
+    <view class="item">
+      <view class="items" wx:for="{{imgurl}}" wx:key="index">
+        <image mode="widthFix" class="imgs" src="{{item}}"></image>
+        <text class="titles">{{titles[index]}}</text>
+        <view>
+          <image class="user_tx" src="{{user_tx[index]}}"></image>
+          <text class="title">{{title[index]}}</text>
+          
+        </view>
+      </view>
+    </view>
+    <!-- 发布按钮 -->
+    <view class="FB" bindtap="FB_container">
+      <image src="/biji/FB.png"></image>发布</view>
+  </van-tab>
+</van-tabs>

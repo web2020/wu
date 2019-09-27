@@ -1,0 +1,45 @@
+/* pages/shang/shang.wxss */
+.shan{
+  width:100%;
+  height:600rpx;
+}
+.dd image{width:100%;height:600rpx;border-radius: 19px;}
+.dd{padding:0 20px;margin-top:18rpx;}
+.s1{
+  font-weight: bold;
+}
+.s2{
+  display:block;
+  font-size: 12px;
+  margin-top:16rpx;
+  color:#C8C8C8;
+}
+.jia{
+  font-size:30rpx;
+  color:red;
+}
+.jia1{
+  margin-top:14rpx;
+  font-size:12px;
+  color:#C8C8C8;
+}
+.jia2{
+  padding:0 10px;
+  border-radius:5px;
+  background:#FF7029;
+  margin-left:14rpx;
+  margin-top:14rpx;
+  font-size:22rpx;
+}
+.ys{color:c;font-size:22rpx;}
+.bj{background:#ffffff;}
+.fud{
+  display:flex;
+}
+.commt{background:#f7f7f7;height:20rpx;}
+.mr{margin-left:12.8rem;}
+.mt{margin-top:3rem;}
+.jo{margin-left:8rem;}
+.cot{
+  background:#C8C8C8;
+}

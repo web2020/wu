@@ -1,0 +1,14 @@
+<!-- pages/fen/fen.wxml -->
+<view class="product-app">
+  <view wx:for="{{lists}}" wx:key="{{index}}" wx:item="{{item}}" class="goods-item">
+      <image src="{{item.img}}" style="width:100%;height:200rpx;"></image>
+      <!-- (2)商品的名称 -->
+      <view class="bei">
+        <text style="font-size:12px;">{{item.guo}}</text>
+      </view>
+      <text style="font-size:14px;" class="cu">{{item.diu}}</text>
+      <!-- (3)商品的价格 -->
+      <view class="info cu">￥{{item.price}}</view>
+    <button bindtap="change1" data-id="{{item}}">购买</button>
+  </view>
+</view>

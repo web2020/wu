@@ -1,0 +1,15 @@
+<!--pages/publish/publish.wxml-->
+ <!-- 我喜欢电影添加组件 -->
+  <!-- 1：电影名称 -->
+    菜品名称: <van-field value="{{moviename}}" placeholder="请输入菜名" bind:change="onChangeMnaem"/>
+  <!-- 2：喜欢原因 -->
+  <text>说点什么:</text>
+     <van-field value="{{content}}" placeholder="请输入文字" bind:change="onChangeContent" />
+  <!-- 3：图片预览区域 -->
+  <view>
+    <image mode="widthFix" class="img" wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+  </view>
+  <!-- 4：上传菜品图片 -->
+  <van-button type="info" size="large" bindtap="upload">上传图片</van-button>
+  <van-button type="info" size="large" bindtap="updata">确认发布</van-button>
+  <van-button type="danger" size="large" bindtap="upcancle">取消发布</van-button>

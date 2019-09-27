@@ -1,0 +1,31 @@
+<!--pages/shang/shang.wxml-->
+<view class="cot">
+  <image class="shan" src="{{img}}"></image>
+  <view class="dd bj">
+    <text class="s1" decode="{{true}}">{{diu}}</text>
+    <text class="s2" decode="{{true}}">{{guo}}</text>
+    <view class="bj" style="display:flex;margin-top:20rpx;">
+      <text class="jia">￥{{price}}</text>
+      <text class="jia1">￥198.00</text>
+      <text class="jia2">包邮</text>
+    </view>
+    <view class="bj fud">
+      <text class="ys">已售4</text>
+      <text class="ys mr">商品</text>
+    </view>
+    <view class="commt"></view>
+    <view style="margin-top:20rpx;margin-bottom:20rpx;">
+      <text>促销</text>
+      <text class="jia2">满减</text>
+      <text>店铺满99包邮</text>
+    </view>
+    <view class="commt"></view>
+    <view class="fud">
+      <text>规格</text>
+      <van-stepper class="jo" value="{{0}}" bind:change="onChange" />
+    </view>
+    <view class="commt"></view>
+    <van-submit-bar data-hi="lists" price="{{prices}}" button-text="提交订单" bind:submit="onSubmit" class="" />
+    <view style="width:200rpx;height:200rpx;"></view>
+  </view>
+</view>

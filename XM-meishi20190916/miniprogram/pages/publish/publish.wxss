@@ -1,0 +1,6 @@
+/* pages/publish/publish.wxss */
+.img{
+  width:100rpx;
+  margin:16rpx;
+  border:16rpx solod #000;
+}

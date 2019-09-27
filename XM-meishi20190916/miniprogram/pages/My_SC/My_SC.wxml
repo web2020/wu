@@ -1,0 +1,16 @@
+<!--pages/My_SC/My_SC.wxml-->
+<view>
+  <view class="My_SC">我的收藏</view>
+  <view bindlongpress="RE_collect" bindtap="detail" data-idx="{{index}}" data-tit="{{title[index]}}" data-imgs="{{images[index]}}" data-tits="{{titles[index]}}" data-u_tx="{{user_tx[index]}}" wx:for="{{images}}" wx:key="index">
+  <!-- 用户信息栏 -->
+    <view class="u_info">
+      <image class="user_tx" src="{{user_tx[index]}}"></image>
+      <text class="user_name">{{title[index]}}</text>
+    </view>
+    <!-- 用户发布内容信息 -->
+    <view class="content">
+      <text class="msg">{{titles[index]}}</text>
+      <image class="images" src="{{images[index]}}"></image>
+    </view>
+  </view>
+</view>

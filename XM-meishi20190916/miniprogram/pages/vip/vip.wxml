@@ -1,0 +1,28 @@
+<!--pages/vip/vip.wxml-->
+<image src="/images/vip.jpg" style="width:100%;height:1100rpx;"></image>
+<view class="commt">
+  <text class="cu ziti-1">海量课程免费看</text>
+  <text class="ziti">覆盖全部分类，全年无限次观看</text>
+  <scroll-view scroll-x>
+    <view class="dd">
+      <view wx:for="{{vip}}" wx:key="{{index}}" wx:item="item">
+        <image src="{{item.img}}"></image>
+      </view>
+    </view>
+  </scroll-view>
+  <text class="cu ziti-1 aa">查看更多 ></text>
+  <view class="dd">
+    <view class="ziti-1 cu">购物预计一年节省</view>
+    <view class="ziti-1 cu ff">￥3134.00</view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="gg">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+        <image src="{{item}}" class="slide-image" />
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <image src="/images/vip001.jpg" style="width:100%;height:960rpx;"></image>
+</view>

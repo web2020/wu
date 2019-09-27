@@ -1,0 +1,16 @@
+<!--pages/My_FB/My_FB.wxml-->
+<view>
+  <view class="My_FB">我的发布</view>
+  <view bindlongpress="RE_content" bindtap="detail" data-tit="{{uname}}" data-imgs="{{images[index]}}" data-tits="{{user_msg[index]}}" data-idx="{{index}}"data-u_tx="{{user_tx}}" wx:for="{{images}}" wx:key="index">
+  <!-- 用户信息栏 -->
+    <view class="u_info">
+      <image class="user_tx" src="{{user_tx}}"></image>
+      <text class="user_name">{{uname}}</text>
+    </view>
+    <!-- 用户发布内容信息 -->
+    <view class="content">
+      <text class="msg">{{user_msg[index]}}</text>
+      <image class="images" src="{{images[index]}}"></image>
+    </view>
+  </view>
+</view>

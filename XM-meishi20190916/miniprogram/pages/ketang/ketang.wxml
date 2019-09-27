@@ -1,0 +1,56 @@
+<view class="element">
+  <view style="width:732rpx;margin:0 auto;">
+    <view class="container">
+      <image src="/ketang/1.jpg"></image>
+      <image src="/ketang/2.jpg"></image>
+      <image src="/ketang/3.jpg"></image>
+      <image src="/ketang/4.jpg"></image>
+      <image src="/ketang/5.jpg"></image>
+    </view>
+    <view class="container">
+      <image src="/ketang/6.jpg"></image>
+      <image src="/ketang/7.jpg"></image>
+      <image src="/ketang/8.jpg"></image>
+      <image src="/ketang/9.jpg"></image>
+      <image src="/ketang/10.jpg"></image>
+    </view>
+    <view>
+      <image bindtap="jumpComment" src="/ketang/vip.jpg" class="vip"></image>
+    </view>
+  </view>
+
+  <view class="item">
+    <text style="font-size:32rpx">今日秒杀</text>
+    <view style="float:right">
+      <text style="line-height:">更多</text>
+      <image src="/ketang/jiantou.png" style="width:24rpx;height:24rpx"></image>
+    </view>
+  </view>
+
+  <scroll-view scroll-x class="scroll-warp">
+    <view class="container-img">
+      <view class="_img" wx:for="{{list}}" wx:key="index">
+        <image src="/ketang/meishi01.JPG"></image>
+        <view>【立减10元】大师技法冷冻BR面团</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <scroll-view scroll-x class="scroll-warp">
+    <view class="container-img">
+      <view class="_img" wx:for="{{list}}" wx:key="index">
+        <image src="/ketang/meishi01.JPG"></image>
+        <view>【立减10元】大师技法冷冻BR面团</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 全部课程 -->
+  <view class="KC">
+  <view></view>
+    <view wx:for="{{lists}}" wx:key="index" class="left">
+      <image src="{{item.image}}"></image>
+      <view style="font-size:22rpx;height:64rpx;">{{item.detail}}</view>
+    </view>
+  </view>
+  </view>

@@ -1,0 +1,121 @@
+<!--pages/exam02/home.wxml-->
+<!-- 轮播图 -->
+<!-- interval 轮播图切换时间 -->
+<!-- duration 轮播图切换动画持续时间 -->
+<!-- autoplay 是否自动切换 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block>
+    <swiper-item>
+      <image src="/home/1.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/home/2.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 第一组轮播图 -->
+
+
+<!-- 第一行按钮 -->
+<view id="d2">
+  <view>
+    <image src="/home/02.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/03.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/04.jpg"></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/05.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/06.jpg"></image>
+    <span>菜谱分类</span>
+  </view>
+</view>
+
+<!-- 第二行按钮 -->
+<view id="d3">
+  <view>
+    <image src="/home/07.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/08.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/09.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/10.jpg" ></image>
+    <span>菜谱分类</span>
+  </view>
+  <view>
+    <image src="/home/11.jpg"></image>
+    <span>菜谱分类</span>
+  </view>
+</view>
+
+<!-- 第三行按钮 -->
+<view id="d4">
+  <view>
+    <image src="/home/12.jpg" ></image>
+  </view>
+  <view>
+    <image src="/home/13.jpg" ></image>
+  </view>
+  <view>
+    <image src="/home/14.jpg" ></image>
+  </view>
+</view>
+
+<!-- 热门活动 -->
+<view id="d5">
+  <span>热门活动</span>
+  <a>更多</a>
+</view>
+
+<!-- 第二组轮播图 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block>
+    <swiper-item>
+      <image src="/home/1.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/home/2.jpg" class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 今日推荐 -->
+<view class="con">
+  <view id="d8">
+    <span>今日推荐</span>
+    <image src="/home/17.jpg"></image>
+  </view>
+</view>
+
+<!-- 视频列表 -->
+<view class="contain">
+  <view wx:for="{{list}}" wx:key="{{index}}">
+    <view class="touxiang">
+      <image src="{{item.image}}"></image>
+      <view>{{item.content}}</view>
+      <text>{{item.details}}</text>
+    </view>
+    <view class="section">
+      <video id="myVideo" src="{{item.src}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+    </view>
+  </view>
+</view>

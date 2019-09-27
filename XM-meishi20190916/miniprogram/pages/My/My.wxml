@@ -1,0 +1,18 @@
+<!--pages/My/My.wxml-->
+<!-- 最外层父元素 -->
+<view>
+  <!-- 用户头像以及姓名 -->
+  <view class="user_xx">
+    <image src="{{user_tx}}" class="user_tx"></image>
+    <text class="user_name">亲爱的用户:{{uname}}</text>
+  </view>
+  <!-- 用户操作部分 -->
+  <view class="My_cz">
+    <view bindtap="FB_content">| 我 的 发 布 </view>
+    <view bindtap="SC_content">| 我 的 收 藏 </view>
+    <view bindtap="cat">| 购 物 车</view>
+    <view>| 客 服 中 心 </view>
+    <view>| 关 于 我 们 </view>
+  </view>
+  <button class="btn" bindtap="login_out">{{btn_inner}}</button>
+</view>

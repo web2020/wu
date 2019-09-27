@@ -1,0 +1,57 @@
+{
+  "pages": [  
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/fen/fen",
+    "pages/ketang/ketang", 
+    "pages/xm/note",
+    "pages/publish/publish",
+    "pages/My/My",
+    "pages/gowuc/gowuc"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F00",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color":"#bfbfbf",
+    "selectedColor":"#333333",
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath":"images/1.png",
+       "selectedIconPath":"images/1_active.png"
+      },
+      {
+        "pagePath": "pages/ketang/ketang",
+        "text": "课堂",
+        "iconPath": "images/2.png",
+        "selectedIconPath": "images/2_active.png"
+      },
+      {
+        "pagePath": "pages/xm/note",
+        "text": "笔记",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/3_active.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "images/4.png",
+        "selectedIconPath": "images/4_active.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "images/5.png",
+        "selectedIconPath": "images/5_active.png"
+      }
+    ]
+
+  }
+}

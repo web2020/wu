@@ -1,0 +1,39 @@
+/* pages/log/log.wxss */
+.login{
+  margin:0 auto;
+}
+.user_log{
+  width:800rpx;
+  height:100rpx;
+  background-color:#eee;
+  text-align: center;
+  line-height: 100rpx;
+  font-size:48rpx;
+  color:#aaa;
+  border-bottom:1px solid rgb(7, 187, 31);
+}
+.login>input{
+  width:500rpx;
+  height:60rpx;
+  margin:30rpx auto;
+  border-bottom:2rpx solid #ddd;
+}
+.btn{
+  width:100%;
+  background-color:rgb(7, 187, 31);
+  margin-top:30rpx;
+  color:#fff;
+  font-size:32rpx;
+}
+checkbox .wx-checkbox-input{
+  width:22rpx;
+  height:22rpx;
+}
+checkbox-group{
+  text-align: center;
+  color:#ccc;
+  font-size:22rpx;
+}
+button[disabled]{
+  background:#ddd !important;
+}

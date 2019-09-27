@@ -1,0 +1,85 @@
+// pages/shang/shang.js
+Page({
+  onChange(event) {
+    console.log(event.detail);//个数
+    var list = this.data.price//价格
+    this.setData({
+      prices: event.detail *list*100
+    })
+  },
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    img:"",
+    price:0,
+    prices:0,
+    guo:"",
+    diu:""
+  },
+  
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    console.log(options)
+    this.setData({
+      price:options.id,
+      img:options.img,
+      guo:options.guo,
+      diu:options.diu
+    })
+  },
+
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+  ss:function(){
+
+  },
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

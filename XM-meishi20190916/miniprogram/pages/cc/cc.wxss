@@ -1,0 +1,16 @@
+/* pages/cc/cc.wxss */
+.cc{
+  width:50rpx!important;
+  height:50rpx!important;
+  border-radius: 30px;
+}
+.cc1{
+  margin-left: 12rem;
+  padding:0 15px;
+  font-size:14px;
+  border:1px solid black;
+  border-radius: 20px;
+  float:rigth;
+}
+.dd image{width:100%;height:600rpx;border-radius: 19px;}
+.dd{padding:0 20px;}
